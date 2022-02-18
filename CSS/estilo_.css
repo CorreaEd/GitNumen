@@ -1,0 +1,326 @@
+body{
+	font-family: calibri, helvetica, sans-serif;
+	background: url("../Img/bg1.jpg");
+	width: 100%;
+}
+
+.header{
+	padding: 0px 0px 0px 10px;
+	background: RGB(173,230,88);
+	width: 100%;
+}
+
+#banner {
+	margin: 0 auto;
+	padding: 0;
+	width: 99%;
+	height: 305px;
+	background: url("../Img/logo.png") no-repeat center bottom;
+	background-size: auto;
+}
+
+.menu{
+	justify-content: center;
+	display:inline-block;
+	position:sticky; 
+	list-style:none; 
+	padding-left: 2%;
+	border-top: 6px solid RGB(120, 134, 107);
+	font-family: Calibri, Tahoma, Arial, sans-serif;
+	font-size: 26px;
+	background: RGB(183, 232, 109);
+	width: 99%;
+	color: #fff;
+	margin-top: 0;
+}
+
+.menu li{
+	float:left; 
+	font-size: 26px;
+	background: RGB(114, 133, 97);
+	border-right:2px solid RGB(114, 133, 97); 
+	color:white;
+	position:sticky;
+}
+
+.menu li a{
+	color:black; 
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block;
+	background: RGB(183, 232, 109) ;
+	position:sticky;
+}
+
+.menu li a:hover{
+	background:RGB(114, 133, 97); 
+	color:white; 
+	text-shadow:0px 0px 5px #fff; 
+}
+
+.menu li ul{
+	position:absolute; 
+	top: 40px; 
+	left:-40px; 
+	display:none; 
+}
+
+.menu li:hover ul, .menu li.hover ul{display:block;}
+
+.menu li ul li {border:1px solid  RGB(114, 133, 97); display:block; width:140px;}
+
+#titulos {
+	padding-top: 5%;
+	padding-bottom: 3%;
+	text-align: center; 
+	color:white;
+}
+
+#redes-sociais {
+	padding-top: 6%;
+	text-align: left;
+	font-size: 22px;
+}
+
+#icones {
+	padding-top: 2%;
+	display: flex;
+	justify-content: center;
+}
+
+.footer {
+    width: 97%;
+    position: relative;
+    display: table;
+    padding: 20px;
+    margin: 0 auto;
+	background: RGB(114, 133, 97);
+	border-radius: 0px 0px 0px 0px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 16px;
+}
+
+.foot-js {
+	text-align: right;
+	margin-right: 5%;
+}
+
+.equipe img{
+	border-radius: 200px 200px 200px 200px; 
+	width: 100px;
+	color: white;
+	margin: 2% 2% 2% 2%;
+}
+
+.equipe legend, cite{
+	font-weight: bold;
+	color: white;
+}
+
+#field {
+	align-items: center;
+	display: flex;
+	width: 80%;
+	margin: -10px 10% -30px 10%;
+}
+
+.git {
+	font-size: 16px;
+	color: red;
+}
+
+#cursos {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#cursos a {
+	margin: 10px;
+}
+
+#videos {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#videos iframe {
+	margin: 20px;
+}
+
+.formulario {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.formulario form {
+	padding: 25px;
+}
+
+.forms {
+	background-color: rgb(93, 128, 62);
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	margin-bottom: 80px;
+	border-radius: 20px;
+}
+
+form {
+	margin: 40px;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+	color: white;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin:20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: rgb(30, 215, 96);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition-duration: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: rgb(16, 129, 56);
+}
+
+/* TELA PEQUENA */
+@media screen and (max-width: 560px) {
+
+	.menu{
+		max-width: 100%;
+	}
+
+	#banner {
+		margin: 0 auto;
+		padding: 0;
+		width: 99%;
+		height: 180px;
+		background: url("../Img/logo2.png") no-repeat center bottom;
+		background-size: auto;
+	}
+
+	.menu{
+		border-top: 4px solid RGB(120, 134, 107);
+		font-size: 26px;
+		width: 51.25em;
+	}
+	
+	.menu li{
+		font-size: 18px;
+	}
+		
+	.menu li ul{
+		top: 31px;
+	}
+	
+	#noticias {
+		padding-top: 8%;
+		padding-bottom: 10%;
+		text-align: center;
+		color:white;
+	}
+
+	#redes-sociais {
+		padding-top: 10%;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	#icones {
+		display: flex;
+		justify-content: center;
+		transform: scale(0.6);
+	}
+
+	.footer {
+		width: 97%;
+		position: relative;
+		display: table;
+		padding: 20px;
+		margin: 0 auto;
+		background: RGB(114, 133, 97);
+		border-radius: 0px 0px 0px 0px;
+		font-weight: bold;
+		color: #fff;
+	}
+	
+	.footer p {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	#cursos {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	#cursos a {
+		margin: 10px;
+	}
+
+	#videos {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	#videos iframe {
+		max-width: 80%;
+		margin: 20px;
+	}
+
+	.enviar {
+		width: 80%;
+}
+
+}
+
+/* TELA MEDIA */
+@media screen and (min-width: 561px) and (max-width: 900px) {
+
+	#banner {
+		margin: 0 auto;
+		padding: 0;
+		width: 99%;
+		height: 250px;
+		background: url("../Img/logo3.png") no-repeat center bottom;
+		background-size: auto;
+	}
+
+	.enviar {
+		width: 80%;
+}
+
+}
